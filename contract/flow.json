@@ -1,0 +1,34 @@
+{
+  "contracts": {
+    "WordVerification": {
+      "source": "cadence/contracts/wordverification.cdc",
+      "aliases": {
+        "testnet": "0000000000000007"
+      }
+    }
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000",
+    "testing": "127.0.0.1:3569",
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+ 
+	"testnet-account": {
+      "address": "0xdfab49498c36d959",
+      "key": {
+        "type": "hex",
+        "index": 0,
+        "signatureAlgorithm": "ECDSA_P256",
+        "hashAlgorithm": "SHA3_256",
+        "privateKey": "ae4dcd94a2d19b2ff4d88e08618e062172ce77eb4f3fdbab7affd0d2e212131e"
+      }
+    }
+  },
+  "deployments": {
+    "testnet": {
+      "testnet-account": ["WordVerification"]
+    }
+  }
+}
