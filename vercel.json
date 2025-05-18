@@ -1,5 +1,8 @@
 {
-  "rewrites":  [
-      {"source": "/(.*)", "destination": "/"}
-   ]
-}
+   "rewrites": [
+     { "source": "/(.*)", "destination": "/index.html" }
+   ],
+   "buildCommand": "cd flowstate && npm run build",
+   "outputDirectory": "flowstate/dist",
+   "framework": "vite"
+ }
