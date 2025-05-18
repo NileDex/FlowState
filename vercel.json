@@ -2,7 +2,6 @@
    "rewrites": [
      { "source": "/(.*)", "destination": "/index.html" }
    ],
-   "buildCommand": "cd flowstate && npm run build",
-   "outputDirectory": "flowstate/dist",
-   "framework": "vite"
+   "buildCommand": "cd flowstate && npm install && npm run build",
+   "outputDirectory": "flowstate/dist"
  }
